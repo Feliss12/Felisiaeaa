@@ -7,7 +7,7 @@ apt update
 apt install mariadb-server -y
 apt install apache2 -y
 apt install php php-{cli,mysql,gd,xml,curl,mbstring,intl,zip,soap,bcmath} -y (web)
-nano /etc/mysql/mariadb.conf.d/50-server.conf (db)
+nano /etc/mysql/mariadb.conf.d/50-server.cnf (db)
 systemctl restart mariadb (db)
 mysql (db)
 CREATE DATABASE moodle DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
